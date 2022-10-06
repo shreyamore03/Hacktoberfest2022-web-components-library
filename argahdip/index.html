@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>home</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="container">
         <ul>
@@ -14,35 +16,39 @@
             <li><a href="contact">Contact</a></li>
             <li><a href="news">News</a></li>
             <li><a href="about">About</a></li>
-             <!-- dark -->
-             <button onclick="myFunction()">dark/light</button>
-          </ul>
+            <!-- dark -->
+            <button onclick="myFunction()">dark/light</button>
+        </ul>
     </nav>
-<br>
+    <br>
     <h3>Contact Form</h3>
 
-<div class="container1">
-  <form action="">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <div class="container1">
+        <form action="">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
+            <label for="country">Country</label>
+            <select id="country" name="country">
       <option value="australia">Australia</option>
+      <option value="australia">India</option>
+      <option value="australia">China</option>
+      <option value="australia">Canada</option>
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
     </select>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
-  </form>
-</div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
