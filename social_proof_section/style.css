@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.about{
+    font-family: 'League Spartan', sans-serif;
+    position: absolute;
+    color: hsl(300, 43%, 22%);
+    left: 175px;
+    top: 100px;
+    height: 250px;
+    width: 478px;
+}
+
+.about h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.rating {
+    position: absolute;
+    left: 55%;
+    top: 100px;
+    height: 300px;
+    width: 550px;
+}
+
+.review1 {
+    border-radius: 8px;
+    border: 2px solid white;
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    left: 35px;
+    top: 16px;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.review2 {
+    border-radius: 8px;
+    border: 2px solid white;
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    left:70px;
+    top: 87px;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.review3 {
+    border-radius: 8px;
+    border: 2px solid white;
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    left: 105px;
+    top: 159px;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.colton {
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(300, 43%, 22%);
+    left: 175px;
+    top: 30px;
+    height: 220px;
+    width: 350px;
+
+}
+
+.irene {
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(300, 43%, 22%);
+    left: 241px;
+    top: 50px;
+    height: 220px;
+    width: 350px;
+}
+
+.anne {
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(300, 43%, 22%);
+    left: 307px;
+    top: 70px;
+    height: 220px;
+    width: 350px;
+
+}
+
+.name {
+    position: absolute;
+    left: 105px;
+    top: 30px;
+}
+
+.content {
+    position: absolute;
+    margin: 2px 22px;
+    padding: 17px;
+}
+
+.star {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.text {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    color: hsl(300, 43%, 22%);
+    position: relative;
+    top: 19px;
+    left: 140px;
+}
+
+.botimg{
+    position: absolute;
+    display: inline-block;
+    left: 447px;
+    top: 90px;
+}
+
+
+@media (max-width:376px) {
+    .rating{
+        position:absolute;
+        
+        left: 37%;
+        top: 345px;  
+    }
+    .review1{
+        width: 350px;
+    }
+.review2{
+    left: 35px;
+    width: 350px;
+}
+.review3{
+    left: 35px;
+    width: 350px;
+}
+    .people{
+        position: absolute;
+        height: 800px;
+        top:575px;
+    }
+    .irene{
+        left:175px ;
+    }
+    .anne{
+        left: 175px;
+    }
+    .botimg{
+        display: none;
+    }
+
+}
