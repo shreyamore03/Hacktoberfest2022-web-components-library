@@ -1,5 +1,4 @@
-const quizData = [
-    {
+const quizData = [{
         question: "Which language runs in a web browser?",
         a: "Java",
         b: "C",
@@ -13,6 +12,14 @@ const quizData = [
         b: "Cascading Style Sheets",
         c: "Cascading Simple Sheets",
         d: "Cars SUVs Sailboats",
+        correct: "b",
+    },
+    {
+        question: "Who is the father of HTML?",
+        a: "Sergey Brin",
+        b: "Tim Berners-Lee",
+        c: "Brendan Eich",
+        d: "Rasmus Lerdorf",
         correct: "b",
     },
     {
@@ -67,7 +74,7 @@ function getSelected() {
     let answer
 
     answerEls.forEach(answerEl => {
-        if(answerEl.checked) {
+        if (answerEl.checked) {
             answer = answerEl.id
         }
     })
@@ -77,15 +84,15 @@ function getSelected() {
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
-    
-    if(answer) {
-        if(answer === quizData[currentQuiz].correct) {
+
+    if (answer) {
+        if (answer === quizData[currentQuiz].correct) {
             score++
         }
 
         currentQuiz++
 
-        if(currentQuiz < quizData.length) {
+        if (currentQuiz < quizData.length) {
             loadQuiz()
         } else {
             quiz.innerHTML = `
