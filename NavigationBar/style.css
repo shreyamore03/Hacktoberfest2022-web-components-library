@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+body {
+    font-family: microsoft YaHei;
+}
+
+nav {
+    background: #7C2607;
+    height: 60px;
+    width: 100%;
+}
+
+label  {
+    color: white;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0px 100px;
+    font-weight: bold;
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 80px;
+}
+ nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 10px;
+    
+ }
+
+ nav ul li.locate a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: bold;
+    
+    text-shadow: 5px 5px 10px black;
+    
+ }
+
+li.locate :hover{
+    color: rgb(124, 124, 241);
+    transition: .5s;
+
+}
+
+li .btn{
+    border-radius: 10px;
+    width: 60px;
+    border-color: #D4BBB1;
+    background: #D4BBB1;
+    font: microsoft YaHei ;
+    box-shadow: 1px 1px 1px white;
+
+}
+
+.text-btn
+{
+    color: white;
+    font-weight: bolder;
+}
+ .text-btn:hover{
+    color:white;
+
+ }
+
+ li .btn:hover{
+    border-color: white;
+    background:none;
+ }
+
+ .check {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+ }
+
+ 
