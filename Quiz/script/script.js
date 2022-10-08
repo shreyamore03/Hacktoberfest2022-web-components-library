@@ -52,6 +52,7 @@ const submitBtn = document.getElementById('submit')
 let currentQuiz = 0
 let score = 0
 
+let selectedAnswers = []
 loadQuiz()
 
 function loadQuiz() {
@@ -84,7 +85,7 @@ function getSelected() {
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
-
+    selectedAnswers.push(answer)
     if (answer) {
         if (answer === quizData[currentQuiz].correct) {
             score++
@@ -95,8 +96,21 @@ submitBtn.addEventListener('click', () => {
         if (currentQuiz < quizData.length) {
             loadQuiz()
         } else {
+            let b=``
+            for (let index = 0; index < quizData.length; index++) {
+                let a =`
+                Q${index + 1}. ${quizData[i].question}
+                You answered :
+                    ${selectedAnswers[i]}. ${quizData[i][selectedAnswers[i]]}
+                Correct answer :
+                    ${quizData[i].correct}. ${quizData[i][correct]}
+                
+                `
+                b.concat(a)
+            }
+            
             quiz.innerHTML = `
-                <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+                <h2>${b}</h2>
                 <button onclick="location.reload()">Reload</button>
             `
         }
