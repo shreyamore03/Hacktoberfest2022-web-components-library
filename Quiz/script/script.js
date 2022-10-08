@@ -48,6 +48,7 @@ const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
 const submitBtn = document.getElementById('submit')
+const head = document.getElementsByClassName('quiz-header')[0]
 
 let currentQuiz = 0
 let score = 0
@@ -96,21 +97,25 @@ submitBtn.addEventListener('click', () => {
         if (currentQuiz < quizData.length) {
             loadQuiz()
         } else {
-            let b=``
+            let b=''
             for (let index = 0; index < quizData.length; index++) {
-                let a =`
-                Q${index + 1}. ${quizData[i].question}
+                let a =`<h2>
+                Q${index + 1}. ${quizData[index].question}
+                </h2>
+                <br>
+                <h4>
                 You answered :
-                    ${selectedAnswers[i]}. ${quizData[i][selectedAnswers[i]]}
+                    ${selectedAnswers[index]}. ${quizData[index][selectedAnswers[index]]}
+                <br>
                 Correct answer :
-                    ${quizData[i].correct}. ${quizData[i][correct]}
-                
+                    ${quizData[index].correct}. ${quizData[index][quizData[index].correct]}
+                </h4>
                 `
-                b.concat(a)
+                b=b.concat(a)
+                
             }
-            
             quiz.innerHTML = `
-                <h2>${b}</h2>
+                ${b}
                 <button onclick="location.reload()">Reload</button>
             `
         }
