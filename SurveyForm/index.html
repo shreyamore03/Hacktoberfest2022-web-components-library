@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: rgb(98, 36, 179);font-size: 20px;">
+    <h2 style="text-align: center;color: white;">Survey Form</h2>
+
+    <div id="div1">
+        <label for="name">Name : </label> 
+        <input class="input" type="text" name="p_name" id="name" placeholder="First Middle Last" required><br>
+        <label for="email">Email : </label>
+        <input class="input" type="email" name="p_email" id="email" placeholder="Email" required><br>
+        <label for="dob">Date of Birth : </label>
+        <input class="input" type="date" name="p_date" id="dob" required><br>
+        <label for="address">Address : </label>
+        <input class="input" type="text" name="p_address" id="address" placeholder="Address" required><br>
+        <label for="age">Age(Optional) : </label>
+        <input class="input" type="number" name="p_age" id="age" maxlength="2" placeholder="Age"><br>
+
+        <label for="role">Which option best describes your current role?</label><br>
+        <select name="p_role" id="role" class="input" required>
+            <option value="Select" selected disabled hidden>Select an option</option>
+            <option value="Select" disabled>Select an option</option>
+            <option value="student">Student</option>
+            <option value="job">Full time Job</option>
+            <option value="learner">Full time Learner</option>
+            <option value="job2">Part time Job</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        Would you recommend our survey to a friend?<br>
+        <input class="margin" type="radio" id="yes" name="p_radio">
+        <label for="yes">Yes</label><br>
+        <input class="margin" type="radio" id="no" name="p_radio">
+        <label for="no">No</label><br>
+        <input class="margin" type="radio" id="maybe" name="p_radio">
+        <label for="maybe">Maybe</label><br><br>
+
+        What is your favourite feature?<br>
+        <select name="p_feature" id="role" class="input" required>
+            <option value="Select" selected disabled hidden>Select an option</option>
+            <option value="Select" disabled>Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open source</option>
+            <option value="5">Other</option>
+        </select><br>
+
+        What would you like to see improved? (Check all that apply)<br>
+        <div id="div2">
+            <input class="margin" type="checkbox" name="option1" id="option1">
+            <label for="option1">Front-end Projects</label><br>
+            <input class="margin"type="checkbox" name="option2" id="option2">
+            <label for="option2">Back-end Projects</label><br>
+            <input class="margin"type="checkbox" name="option3" id="option3">
+            <label for="option3">Data visualization</label><br>
+            <input class="margin"type="checkbox" name="option4" id="option4">
+            <label for="option4">Open source community</label><br>
+            <input class="margin"type="checkbox" name="option5" id="option5">
+            <label for="option5">Tutorials</label><br>
+            <input class="margin"type="checkbox" name="option6" id="option6">
+            <label for="option6">Additional cources</label><br>
+            <input class="margin"type="checkbox" name="option7" id="option7">
+            <label for="option7">Forum</label><Br>
+            <input class="margin"type="checkbox" name="option8" id="option8">
+            <label for="option8">Gitter help rooms</label><br>
+        </div><br>
+
+        Any comments or suggestions?<br>
+        <textarea style="width: 97%;" name="text1" rows="6" placeholder="Enter your comments here"></textarea>
+        <br>
+
+        <input type="submit" value="Submit" id="submit">
+    </div>
+    
+</body>
+</html>
