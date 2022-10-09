@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boxicons cdn link -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>SideBar</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <div class="logo_name">Trojan Hex</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li class="search">
+                 <i class='bx bx-search'></i> 
+                 <input type="text" class="links_name" placeholder="Search">
+            </li>
+            <li> 
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                  <span class="links_name" >Dashboard</span> 
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                     <i class='bx bxs-user'></i>
+                      <span class="links_name" >Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="#">
+                     <i class='bx bx-math'></i>
+                     <span class="links_name">Attendence</span>
+                    </a>
+                    <span class="tooltip">Attendence</span>
+                </li>
+            <li> 
+                <a href="#">
+                     <i class='bx bxs-game'></i>
+                     <span class="links_name" >Game</span>
+                    </a>
+                    <span class="tooltip">Game</span>
+                </li>
+            <li>
+                <a href="#">
+                     <i class='bx bx-file-find'></i>
+                     <span class="links_name" >Research</span>
+                    </a>
+                    <span class="tooltip">Research</span>
+                </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="images/icon.jpg" alt="" width="30px">
+                    <div class="name_job">
+                        <div class="name">Yash Gaur</div>
+                        <div class="job">Web Developer</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log-out"></i>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="home-content">
+        <div class="text">main content here</div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
