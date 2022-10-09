@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Parallax </title>
+</head>
+
+<style>
+body {
+    text-align: center;
+    background-color: rgba(87, 212, 243, 0.519);
+}
+
+.parallax { 
+  /* Set a specific height */
+  min-height: 350px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg1 { 
+    background-image: url("https://wallpaperaccess.com/full/1119924.jpg"); 
+}
+
+#bg2 { 
+    background-image: url("https://media.istockphoto.com/photos/hand-using-laptop-and-press-screen-to-video-streaming-on-internet-picture-id1312906205?b=1&k=20&m=1312906205&s=170667a&w=0&h=kQcRtEf52jtwp-SkKw7QTKrAnaJRSIzboc0xt8Y9zE0="); 
+}
+
+#bg4 { 
+    background-image: url("https://media.istockphoto.com/photos/abstract-blue-digital-background-picture-id1146532466?b=1&k=20&m=1146532466&s=170667a&w=0&h=v2JkhOZPEDiRPpTVKEbBQGfNedhNDeRu02t0LNKtTD4="); 
+}
+
+#bg3 { 
+    background-image: url("https://wallpaperaccess.com/full/2098538.jpg"); 
+}
+
+div {
+    text-align: center;
+    font-size: larger; 
+}
+
+ul, ol, dl{
+    display: inline-block;
+    text-align: left;
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-decoration: underline;
+}
+
+mark {
+    border-radius: 10pt;
+    background-color: rgba(0, 0, 255, 0.541);
+}
+</style>
+
+<body>
+    <h1> <mark> Tit-Bits of Cyber Security  </mark></h1>
+    
+    <div class="parallax" id="bg1"></div>
+
+    <div style = "background-color: rgb(1, 55, 81); height:200pt; ">   
+       <h2> <br> Types of Cyber Attacks </h2>
+        <ul> 
+            <li> Phishing Attack </li>
+            <li> Malware Attack </li>
+            <li> Denial-of-Service Attack </li>
+            <li> Man-in-the-Middle Attack </li>
+            <li> SQL Injection Attack </li>
+        </ul>
+    </div>
+
+    <div class="parallax" id="bg2"></div>
+   
+    <div style = "background-color: rgb(2, 54, 79); height:200pt; "> 
+        <h2> <br> Phases of Ethical Hacking </h2> 
+        <ol> 
+            <li> Reconnaissance </li>
+            <li> Scanning </li>
+            <li> Gaining Access </li>
+            <li> Maintaining Access </li>
+            <li> Clearing Track </li>
+        </ol>
+    </div>
+
+    <div class="parallax" id="bg3"></div>
+
+    <div style = "background-color: rgb(15, 72, 99); height:135pt; ">
+        <h2><br> OS For Hacking </h2> 
+        <dl> 
+            <dt> The Best Picks For You: </dt>
+            <dd> Kali Linux </dd>
+            <dd> Parrot OS </dd>
+        </dl>
+    </div>
+    
+    <div class="parallax" id="bg4"></div>
+    
+</body>
+</html>
