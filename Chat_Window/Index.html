@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>
+    Chat window
+  </title>
+  
+  <style>
+    body{
+          font-family: cursive;
+          background-color:lightpink;
+        }
+    
+    *{
+      box-sizing:border-box;
+    }
+        
+    .open{
+          font-size: medium;
+          font-family: cursive;
+          background-color:hsla(120, 100%, 75%, 0.3);;
+          color:black;
+          padding:06px 10px;
+          border: 3px dotted hsla(120, 70%, 70%, 0.4);;
+          cursor: pointer;
+          opacity: 0.8;
+          position: fixed;
+          bottom: 23px;
+          right: 27px;
+          width:270px;
+        }
+        
+    .popup{
+          display:none;
+          position:fixed;
+          bottom: 0;
+          right:15px;
+          border:5px solid lightgray;
+        }
+        
+    .container{
+          max-width: 300px;
+          padding:10px;
+          background-color:white
+        }
+        
+    .container textarea{
+          font-family: cursive;
+          width:100%;
+          padding: 15px;
+          margin:5px 0 22px 0;
+          border: none;
+          background:lightgray;
+          resize:none;
+          min-height: 200px;
+        }
+        
+    .conatiner textarea:focus{
+          background-color:lightgray;
+          outline:2px dotted darkgray;
+        }
+        
+    .conatiner .btn{
+          font-family: cursive;
+          background-color:tomato;
+          color:white;
+          padding: 15px 20px;
+          border: none;
+          cursor: progress;
+          width:100%;
+          margin-bottom: 10px;
+          opacity: 0.7;
+        }
+        
+    .container .cancle{
+          background-color:red;
+        }
+        
+    .open:hover{
+          background-color: hsla(120, 60%, 70%, 0.5);
+          opacity: 1;
+        }
+        
+    .cancel:hover{
+          background-color: hsla(0, 100%, 50%, 0.3);
+          opacity: 1;
+        }
+  </style>
+
+  </head>
+
+  <body>
+
+    <button class="open" onclick="openForm()">Chat</button>
+    <div class="popup" id="form">
+    
+      <form action="page" class="container">
+    <h1>Start Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type Text" name="msg" required></textarea>
+    <button type="Submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  
+      </form>
+</div>
+
+    <script type="text/javascript">
+  function openForm() {
+    document.getElementById("form").style.display = "block";
+  }
+  
+      function closeForm() {
+    document.getElementById("form").style.display = "none";
+  }
+</script>
+
+  </body>
+</html>
