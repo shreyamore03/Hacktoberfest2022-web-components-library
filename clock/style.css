@@ -1,0 +1,30 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: rgb(204, 209, 210);
+}
+.container{
+    font-family: "Arial", Helvetica, sans-serif;
+    padding: 30px;
+    color: rgb(183, 17, 17);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 150px;
+    white-space: nowrap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+.date{
+    text-align: center;
+    margin-top: 27.5rem;
+    color: #404f5f;
+    font-size: 8rem;
+    font-weight: 500;
+    text-transform: uppercase;    
+ }
