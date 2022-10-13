@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0%;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.6;
+  background-color: rgb(194, 194, 194);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+section {
+  padding: 7em 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+split > * {
+  flex-basis: 30%;
+  min-width: 15rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: blueviolet;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  padding: 0.5em 1.25rem;
+  border-radius: 0.25em;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  position: relative;
+  box-shadow: 0.1em 0.2em 1em rgb(52, 102, 158);
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-size: clamp(3rem, clac(5vw + 1 rem), 4.5rem);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  padding: 9em 0;
+
+  background-image: url(./image2.jpg), radial-gradient(#444, #111);
+  background-blend-mode: multiply;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.section-title {
+  text-align: center;
+  text-shadow: 0 0 1em rgb(133, 133, 133);
+  font-size: clamp(2.5rem, clac(5vh+1rem), 4rem);
+  line-height: 1;
+  background: -webkit-linear-gradient(3deg, #3b2857, #8f3e28);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.featured {
+  background: linear-gradient(to left, #3c4768, #859398);
+}
+
+.featured-item {
+  display: block;
+  position: relative;
+  transform: scale(0.85);
+  transition: transform 250ms ease-in-out;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(27, 25, 25);
+  line-height: 1.2;
+}
+
+.featured-item:hover,
+.featured-item:focus {
+  transform: scale(1);
+}
+
+.featured-item:hover .featured_details,
+.featured-item:focus .featured_details {
+  opacity: 1;
+  text-shadow: 0 0 0.25em rgba(#fff, 1);
+}
+
+.featured-item::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 75% 85% 0 0;
+  border-radius: 50%;
+  background: #208aa5;
+  z-index: -1;
+}
+
+.featured_details {
+  opacity: 0;
+  transition: opacity 250ms linear;
+
+}
+
+span {
+  display: block;
+  font-weight: 700;
+  font-size: 1.7rem;
+  padding-top: 0%;
+}
+
+.product {
+  padding: 3em 0;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  padding: 1em;
+  text-align: center;
+}
+
+.product-red {
+  background: linear-gradient(to left, #384a8d, #519c52);
+  padding: 3em 0;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+.product-blue {
+  background: linear-gradient(to left, #f2994a, #f2c94c);
+  padding: 3em 0;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+.product-green {
+  background: linear-gradient(to left, #e8cbc0, #7883b1);
+  padding: 3em 0;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.product_title {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 0.2em rgb(27, 25, 25);
+}
+
+#btn1 {
+  background-color: rgb(25, 189, 25);
+  box-shadow: 0.1em 0.2em 0.5em rgb(61, 77, 56);
+}
+
+#btn2 {
+  background-color: rgb(160, 136, 28);
+  box-shadow: 0.1em 0.2em 0.5em rgb(61, 77, 56);
+}
+
+#btn3 {
+  background-color: rgb(29, 60, 117);
+  box-shadow: 0.1em 0.2em 0.5em rgb(61, 77, 56);
+}
+
+image {
+  margin: -5em 0 0 0;
+}
+
+#product_img1 {
+  padding-left: 1em;
+}
+
+#product_img2 {
+
+ 
+ transform: rotate(325deg);
+}
+
+#product_img3{
+ padding-left: 4rem;
+
+ position: relative;
+}
+
+#img1{
+  top: 40%;
+  left: 50%;
+  padding: 0%;
+
+}
+#featured-item3{
+  width: 15rem;
+}
+
+
+#featured-item2{
+  width: 15rem;
+}
+
+.product_description{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
